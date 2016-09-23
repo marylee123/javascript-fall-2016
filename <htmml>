@@ -1,0 +1,16 @@
+<htmml>
+	<head>
+		<style>
+		</style>
+		<script>
+			function family_avg(na,nb,nc){
+				return (na+nb+nc)/3
+			}
+			party_avg(10,13,18)
+			var age = family_avg(na, nb, nc);
+			var age=alert("My sisters and I age average is ")
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
