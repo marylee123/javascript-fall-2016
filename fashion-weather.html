@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script>
+
+			function WhatToWear(currentWeather){
+
+				if(currentWeather == "raining"){
+					alert("You should wear a raincoat and rain boots")
+				}
+				else if(currentWeather == "hot"){
+					alert("You should wear shorts and sandals")
+				}
+				else if(currentWeather == "snowy"){
+					alert("You should wear layers of long sleeves and coats")
+				}
+				else if(currentWeather == "breezy"){
+					alert("Yoi should wear a sweater with leggings")
+				}
+				else if(currentWeather == "sunny"){
+					alert("You should wear shorts and sunglasses")
+				}
+			}
+
+			var weather = prompt("What's the weather?")
+			WhatToWear(weather.toLowerCase())
+
+
+		</script>
+	</head>
+</html>
