@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<script>
+			function unicornia(){
+				alert("You see a a garden. There are whomping willows, rich soil with bright green grass, and flowers of all kinds. That's when you spot a UNICORN!!!!. Maybe even last of it's kind! Now, you're an expert in unicorns. You can take it as your own, see your future, or take it's magic")
+				var choice;
+				choice = prompt("Enter 'pet' if you want to make it your pet. Enter in 'future' to see your future. Enter 'magic steal' to take it's magic.")
+				
+				if(choice == "pet"){
+					unicornPet()
+
+					
+				}
+				else if(choice == "future"){
+					fortuneTeller()
+
+					
+				}
+				else if(choice == "magic steal"){
+					magic()
+
+					
+				} 
+				else {
+					alert("Sorry dude, not an option")
+
+
+				}
+
+
+			}
+			function unicornPet(){
+				alert("Awwwwwwww! I'm so happy for you two! Make sure to keep it healthy.")
+				var choice = prompt("What are you going to do? Live with it, or take it with you or, just visit it. Enter 'live' to live with it.Enter 'take' to take it with you. Enter 'visit' to only visit it now and then.")
+				if(choice == "take"){
+					alert("It's just so beautiful!")
+				}
+				else if(choice == "visit"){
+					alert("Okay, fine.")
+				}
+			}
+			function fortuneTeller(){
+				alert("Cool! You can see your future now")
+				var choice = prompt("What type of future are you go to ask to see. See how much money you're going to end up with, or how many friends you have? Enter 'money' to see how much you going to have. Enter 'friends' to see how many friends you are going to have.")
+				if(choice == "money"){
+					alert("Definitely not the best choice, but whatever.")
+				}
+				else if(choice == "friends"){
+					alert("That's pretty sweet. I hope you end up with a lot of friends!")
+				}
+			}							
+			function magic(){
+				alert("HOW DARE YOU!! You're a BIG FAT MEANIE!!!")
+				var choice = prompt("So, how are you going to do it? Do it yourself,or askfor help? Enter 'DIY' to do it yourself. Type in 'help' to get help.")
+				if(choice == "DIY"){
+					alert("You are not my friend anymore. You better not kill it!")
+				}
+				else if(choice == "help"){
+					alert("To be honest, I'm not too sure someone's going to help you steal the magic of a unicorn. SO HAA!!! Unless someone is as evil as you, or you are offering them something they can't resist. Well then that better NOT happen!")
+				
+				}
+			}
+
+
+
+			unicornia()
+		</script>
+	</head>
+</html>

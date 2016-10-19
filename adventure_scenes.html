@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<script>
+			function fireWoods(){
+				alert("You see many trees around you. But suddenly, it's on FIRE!!! On your left is a bucket of water. In front of you is a phone. On your right is a portal that can take you anywhere.")
+				var choice;
+				choice = prompt("Enter 'right' if you want to take the bucket of water. Enter 'up' to use the phone. Enter 'left' if you want to go through the portal.")
+				
+				if(choice == "right"){
+					waterBucket()
+
+					
+				}
+				else if(choice == "up"){
+					phoneCall()
+
+					
+				}
+				else if(choice == "left"){
+					portal()
+
+					
+				} 
+				else {
+					alert("Not in the any of the options")
+
+
+				}
+
+
+			}
+			function waterBucket(){
+				alert("You have the bucket of water")
+				var choice = prompt("How are you going to use the bucket of water? Throw it at the fire or drink it? Type in 'throw' to throw the water at the fire, or 'drink' to drink it.")
+				if(choice == "throw"){
+					alert("Thumbs Up. You made the right choice")
+				}
+				else if(choice == "drink"){
+					alert("Tsk, tsk, tsk, bad choice.You're even endangering yourself!")
+				}
+			}
+			function phoneCall(){
+				alert("You have the phone")
+				var choice = prompt("Who are you going to call on the phone? Call 911 or your friends. Type in '911' to call them, or 'friends' to call them.")
+				if(choice == "911"){
+					alert("Thumbs Up. Nice choice.")
+				}
+				else if(choice == "friends"){
+					alert("Ehhhhh, not the best choice.")
+				}
+			}
+			function portal(){
+				alert("You have the portal. But I can't believe you're not going to try to help with the fire!")
+				var choice = prompt("Where are you going to go? Home, a different country or back in time?! Type in 'home', 'country', or 'time travel' to go there.")
+				if(choice == "home"){
+					alert("Sweet, sweet home.")
+				}
+				else if(choice == "country"){
+					alert("Cool")
+					prompt("Which country are you going to go to?")
+					alert("Couldn't have picked a better choice.")
+				}
+				else if(choice == "time travel"){
+					alert('Oooooh!')
+					prompt("What time are you going to go in? Where?")
+					alert("Awesome!")
+				}
+			}
+
+
+
+			fireWoods()
+		</script>
+	</head>
+</html>

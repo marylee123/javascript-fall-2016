@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<script>
+			function forkPath(){
+				alert("You see a dirt path and distant mountains. You hear birds chirping, and smell nature. Then, you suddenly stop because of the fork in the path. On your left is mansion. On your right is your friends, and in front of you is your family.")
+				var choice;
+				choice = prompt("Enter 'left' if you want to go to the mansion. Enter 'right' to go to your friends. Enter 'up' if you want to go to your family.")
+				
+				if(choice == "right"){
+					friends()
+
+					
+				}
+				else if(choice == "up"){
+					family()
+
+					
+				}
+				else if(choice == "left"){
+					mansion()
+
+					
+				} 
+				else {
+					alert("Sorry dude, not an option")
+
+
+				}
+
+
+			}
+			function friends(){
+				alert("You're walking to the mansion. But have you ever heard to never pick money over family and friends! I can already tell that you're greedy.")
+				var choice = prompt("What are you going do with the mansion? Live in it, or sell it? Type in 'live' to live in it, or 'sell' to sell it.")
+				if(choice == "live"){
+					alert("Ok, sure. You get to live in a mansion")
+				}
+				else if(choice == "sell"){
+					alert("Ehhhhh....you could have done better")
+				}
+			}
+			function family(){
+				alert("You're walking to your family. Great choice!'")
+				var choice = prompt("What are you going to do? Run and hug them, or just walk and greet them? Enter 'hug' to run and hug them. Enter 'greet' to walk and greet them.")
+				if(choice == "hug"){
+					alert("Awwwwwwwwww!!")
+				}
+				else if(choice == "greet"){
+					alert("Do you even miss them!")
+				}
+			}
+			function friends(){
+				alert("You're going to your friends. So sweet")
+				var choice = prompt("So, what are you going to do? Ask them to help you, or just enjoy the thought that you are with your friends? Type 'help' to ask them to help you. Type 'lovely thoughts' to be happy to be with them.")
+				if(choice == "help"){
+					alert("Yeeeeeeeesh. Do you even reapect them?!")
+				}
+				else if(choice == "lovely thoughts"){
+					alert("You're making me tear up!")
+				
+				}
+			}
+
+
+
+			forkPath()
+		</script>
+	</head>
+</html>
