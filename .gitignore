@@ -1,2 +1,19 @@
 
 console.html
+
+	var greeting = "HI";
+	 			alert(greeting.charAt(0));
+	 			alert(greeting.charAt(1));
+	 			alert(greeting.charAt(2));
+	 			alert(greeting.length)
+	 			alert("I'm hungry!".length)
+
+	
+	 		function toMorse(HAWAII){
+	 			var i, letter, encoded, result = "";
+	 			for(i = 0; i < word.length; i++){
+	 					letter = word.charAt(i);
+	 					encodedLetter = encodeMorse(letter);
+	 					result = result + encodedLetter + "";
+	 			}
+	 			return result;

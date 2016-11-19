@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+			var user_choice = prompt("rock, paper or scissors?")
+			var computer_choice = rockPaperScissor(randomInt())
+			alert(computer_choice)
+			alert(match(user_choice, computer_choice))
+
+			function randomInt(){
+				return Math.floor(Math.random() * 3)
+			}
+
+			function rockPaperScissor(choice){
+				if(choice == 0){
+					return "rock";
+				}
+				else if(choice == 1){
+					return "paper";
+				}
+				else if(choice == 2){
+					return "scissor";
+				}
+			}
+
+			
+			function match(user_choice, computer_choice){
+				if(user_choice == computer_choice){
+					return "It's " + computer_choice + "! You win!"					
+				}
+				else{
+					return "It's " + computer_choice + "! You lose"
+				}
+			}
+
+
+			
+		</script>
+	</head>
+</html>

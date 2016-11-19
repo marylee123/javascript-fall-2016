@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script>
+			
+			var user_choice = prompt("head or tails?")
+			var computer_choice = headOrTails(randomInt());
+			alert(computer_choice);
+
+			alert(compare(user_choice, computer_choice))
+
+
+			function randomInt(){
+				return Math.floor(Math.random() * 2)
+			}
+			
+			function headOrTails(number){
+				if(number == 1){
+					return "head"
+				}
+				if(number == 0){
+					return "tails"
+				}
+			}
+
+		   function compare(user_choice, computer_choice){
+		   		if(user_choice == computer_choice){
+		   			return "It's " + computer_choice + "! You win!"
+		   		}
+		   		else{
+		   			return "It's " + computer_choice + "! You lose."
+		   		}
+		   }
+
+
+			// alert(headOrTails(randomInt()));
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+		</script>
+	</head>
+</html>

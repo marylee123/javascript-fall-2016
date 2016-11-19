@@ -1,0 +1,138 @@
+<html>
+	<head>
+	 	<script>
+	 		function encodeMorse(letter){
+	 			if(letter === 'A'){
+	 				return "*_";
+	 			}
+	 			else if(letter === 'B'){
+	 				return "_***";
+	 			}
+	 			else if(letter === 'C'){
+	 				return "_*_*";
+	 			}
+	 			else if(letter === 'D'){
+	 				return "_**";
+	 			}
+	 			else if(letter === 'E'){
+	 				return "*";
+	 			}
+	 			else if(letter === 'F'){
+	 				return "**_*";
+	 			}
+	 			else if(letter === 'G'){
+	 				return "__*";
+	 			}
+	 			else if(letter === 'H'){
+	 				return "****";
+	 			}
+	 			else if(letter === 'I'){
+	 				return "**";
+	 			}
+	 			else if(letter === 'J'){
+	 				return "*___";
+	 			}
+	 			else if(letter === 'K'){
+	 				return "_*_";
+	 			}
+	 			else if(letter === 'L'){
+	 				return "*_**";
+	 			}
+	 			else if(letter === 'M'){
+	 				return "__";
+	 			}
+	 			else if(letter === 'N'){
+	 				return "_*";
+	 			}
+	 			else if(letter === 'O'){
+	 				return "___";
+	 			}
+	 			else if(letter === 'P'){
+	 				return "*__*";
+	 			}
+	 			else if(letter === 'Q'){
+	 				return "__*_";
+	 			}
+	 			else if(letter === 'R'){
+	 				return "*_*";
+	 			}
+	 			else if(letter === 'S'){
+	 				return "***";
+	 			}
+	 			else if(letter === 'T'){
+	 				return "_";
+	 			}
+	 			else if(letter === 'U'){
+	 				return "**_";
+	 			}
+	 			else if(letter === 'V'){
+	 				return "***_";
+	 			}
+	 			else if(letter === 'W'){
+	 				return "*__";
+	 			}
+	 			else if(letter == 'X'){
+	 				return "_**_";
+	 			}
+	 			else if(letter === 'Y'){
+	 				return "_*__";
+	 			}
+	 			else if(letter === 'Z'){
+	 				return "__**";
+	 			}
+	 			else if(letter === 'HI'){
+	 				return "**** **";
+	 			}
+	 			
+	 			
+	 			else if(letter === '1'){
+	 				return "*____";
+	 			}
+	 			else if(letter === '2'){
+	 				return "**___";
+	 			}
+	 			else if(letter === '3'){
+	 				return "***__";
+	 			}
+	 			else if(letter === '4'){
+	 				return "****_";
+	 			}
+	 			else if(letter === '5'){
+	 				return "*****";
+	 			}
+	 			else if(letter === '6'){
+	 				return "_****";
+	 			}
+	 			else if(letter === '7'){
+	 				return "__***";
+	 			}
+	 			else if(letter === '8'){
+	 				return "___**";
+	 			}
+	 			else if(letter === '9'){
+	 				return "____*";
+	 			}
+	 			else if(letter === '0'){
+	 				return "_____";
+	 			}
+	 		}
+
+	
+	 		function toMorse(word){
+	 			var i, letter, encoded, result = "";
+	 			for(i = 0; i < word.length; i++){
+	 					letter = word.charAt(i);
+	 					encodedLetter = encodeMorse(letter);
+	 					result = result + encodedLetter + "   ";
+	 			}
+	 			return result;
+			}
+			alert(toMorse("HAWAII"))
+
+			var morse = prompt("enter a word, letter, or a digit")
+	 		alert(toMorse(morse));		
+	
+	 		
+	 	</script>
+	 </head>
+</html>

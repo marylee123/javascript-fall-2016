@@ -4,24 +4,27 @@
 
 			function WhatToWear(currentWeather){
 
-				if(currentWeather == "raining"){
-					alert("You should wear a raincoat and rain boots")
+				if(currentWeather == 1){
+					alert("You say it's raining, so you should wear a raincoat and rain boots")
 				}
-				else if(currentWeather == "hot"){
-					alert("You should wear shorts and sandals")
+				else if(currentWeather == 2){
+					alert("You say it's hot, so you should wear shorts and sandals")
 				}
-				else if(currentWeather == "snowy"){
-					alert("You should wear layers of long sleeves and coats")
+				else if(currentWeather == 3){
+					alert("You say it's snowy, so you should wear layers of long sleeves and coats")
 				}
-				else if(currentWeather == "breezy"){
-					alert("Yoi should wear a sweater with leggings")
+				else if(currentWeather == 4){
+					alert("You say it's breezy, so you should wear a sweater with leggings")
 				}
-				else if(currentWeather == "sunny"){
-					alert("You should wear shorts and sunglasses")
+				else if(currentWeather == 5){
+					alert("You say it's sunny, so you should wear shorts and sunglasses")
 				}
-			}
+				else{
+					alert("Sorry, not an option")
+				}
+			}``1	
 
-			var weather = prompt("What's the weather?")
+			var weather = prompt("What's the weather? Enter '1' if it's raining. Enter '2' if it's hot. Enter '3' if it's snowy.  Enter '4' if it's breezy. Enter '5 if it's sunny.")
 			WhatToWear(weather.toLowerCase())
 
 
